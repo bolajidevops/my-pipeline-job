@@ -139,3 +139,17 @@ Docker and Jenkins are installed on my EC2 instance, a dockerfile needs to be cr
 - Pushing these files `dockerfile` and `index.html will trigger jenkins to automatically run new build for our pipeline.
 
 
+![alt text](images/build-stages-jenkins.png)
+
+
+To access the content of `index.html on my web browser, I need to first edit inbound rules and open the port mapped on my container to (8081).
+
+
+![alt text](images/secuirity-group.png)
+
+The content of the html file can now be accessed on web browser using the url below.
+
+`http://13.53.172.242:8081/`
+
+
+![alt text](images/congrats.png)
