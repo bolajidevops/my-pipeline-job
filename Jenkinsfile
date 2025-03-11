@@ -35,4 +35,4 @@ pipeline {
                      sh 'docker run -itd -p 8085:80 my-nginx:1.0'
                 }
             }
-        }            
+        }           
