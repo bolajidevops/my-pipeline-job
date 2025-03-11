@@ -17,7 +17,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    sh 'docker run -itd -p 8083:80 dockerfile'
+                    sh 'docker run -itd -p 8084:80 dockerfile'
                 }
             }
         }
@@ -32,7 +32,7 @@ pipeline {
         stage ('Run Docker Container') {
            steps {
                 script {
-                     sh 'docker run -itd -p 8084:80 my-nginx:1.0'
+                     sh 'docker run -itd -p 8085:80 my-nginx:1.0'
                 }
             }
         }            
