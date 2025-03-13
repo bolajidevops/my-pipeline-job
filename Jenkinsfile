@@ -29,7 +29,7 @@ pipeline {
                 }
             }
         }
-        stage ('Run Docker Container') {
+        stage ('Run Docker Container from dockerhub') {
            steps {
                 script {
                      sh 'docker run -itd -p 8085:80 my-nginx:1.0'
