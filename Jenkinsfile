@@ -1,5 +1,11 @@
 pipeline {
     agent any
+    environment {
+        registry = 'bolajidevops/my-nginx'
+        IMAGE_TAG = '1.0'
+        DOCKERHUB_CREDENTIALS_ID = 'dockerhub_credentials'
+        dockerImage = ''
+        }
     
     stages {
         stage('Connect To Github') {
@@ -24,8 +30,9 @@ pipeline {
         stage ('Push Docker image') {
            steps {
                 script {
-                     sh 'docker tag dockerfile bolajidevops/my-nginx:1.0'
-                     sh 'docker push bolajidevops/my-nginx:1.0'
+                     sh 'docker tag dockerfile registry:IMAGE_TAG'
+                     sh  'docker.withRegistry('', dockerhub_credentials)'
+                     sh 'docker push registry:IMAGE_TAG'
                 }
             }
         }
