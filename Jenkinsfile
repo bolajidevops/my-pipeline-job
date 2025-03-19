@@ -1,12 +1,5 @@
 pipeline {
     agent any
-    environment {
-        registry = 'bolajidevops/my-nginx'
-        IMAGE_TAG = '1.0'
-        DOCKERHUB_CREDENTIALS_ID = 'dockerhub_credentials'
-        dockerImage = ''
-        }
-
     stages {
         stage('Connect To Github') {
             steps {
