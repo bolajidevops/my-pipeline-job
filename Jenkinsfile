@@ -27,21 +27,4 @@ pipeline {
                 }
             }
         }
-        stage ('Push Docker image') {
-           steps {
-                script {
-                     sh 'docker tag dockerfile registry:IMAGE_TAG'
-                     sh  'docker.withRegistry('', dockerhub_credentials)'
-                     sh 'docker push registry:IMAGE_TAG'
-                }
-            }
-        }
-        stage ('Run Docker Container from dockerhub') {
-           steps {
-                script {
-                     sh 'docker run -itd -p 8086:80 my-nginx:1.0'
-                }
-            }
-        }
-    }    
-}    
+    
