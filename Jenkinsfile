@@ -6,7 +6,7 @@ pipeline {
         DOCKERHUB_CREDENTIALS_ID = 'dockerhub_credentials'
         dockerImage = ''
         }
-    
+
     stages {
         stage('Connect To Github') {
             steps {
@@ -27,4 +27,6 @@ pipeline {
                 }
             }
         }
-    
+    }
+
+}    
