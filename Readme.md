@@ -117,7 +117,7 @@ The stage 1 of the script connects jenkins to github repository. To generate syn
 ![alt text](images/Git-url.png)
 
 
-- Generate Pipeline Script.
+- Generating Pipeline Script.
 
 ![alt text](images/generate-pipeline.png)
 
