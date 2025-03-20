@@ -153,4 +153,3 @@ The content of the html file can now be accessed on web browser using the url be
 
 
 ![alt text](images/congrats.png)
-
