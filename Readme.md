@@ -112,7 +112,7 @@ The stage 1 of the script connects jenkins to github repository. To generate syn
 ![alt text](images/Checkout-version.png)
 
 
-- Paste you repository url and make sure your branch is main
+- Paste you repository url and make sure your branch is main.
 
 ![alt text](images/Git-url.png)
 
