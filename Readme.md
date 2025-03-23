@@ -147,7 +147,7 @@ To access the content of `index.html on my web browser, I need to first edit inb
 
 ![alt text](images/secuirity-group.png)
 
-The content of the html file can now be accessed on web browser using url below.
+The content of the html file can now be accessed on web browser using the url below.
 
 `http://13.53.172.242:8081/`
 
